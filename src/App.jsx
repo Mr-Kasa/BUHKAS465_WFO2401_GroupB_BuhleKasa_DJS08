@@ -4,23 +4,21 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Vans from "./pages/Vans"
+import VanDetails from "./pages/VanDetail"
+import Layout from '../components/Layout';
 
 
 export default function App() {
   return (
     <BrowserRouter>
-      <header>
-        <Link className="site-logo" to="/">#VanLife</Link>
-        <nav>
-          <Link to="/about">About</Link>
-           <Link to="/vans">Vans</Link> 
-        </nav>
-      </header>
-      <Routes>
+    <Routes>
+      <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/vans" element={<Vans />} /> 
         <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
-  )
+        <Route path="/vans" element={<Vans />} />
+        <Route path="/vans/:id" element={<VanDetails />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>)
+    
 }
