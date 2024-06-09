@@ -1,5 +1,6 @@
 import {React, Outlet }from "react"
 import Header from "./Header"
+import Footer from "./Footer"
 
 
 export default function Layout() {
@@ -7,6 +8,7 @@ export default function Layout() {
         <>
         <Header/>
         <Outlet />
+        <Footer/>
         </>
     )
 }
