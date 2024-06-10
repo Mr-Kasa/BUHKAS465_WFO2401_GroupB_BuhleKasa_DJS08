@@ -19,8 +19,6 @@ import Layout from "./components/Layout"
 import HostLayout from "./components/HostLayout"
 import AuthRequired from "./components/AuthRequired"
 
-import "./server"
-
 function App() {
   /**
    * Challenge: Create the AuthRequired Layout Route to protect
