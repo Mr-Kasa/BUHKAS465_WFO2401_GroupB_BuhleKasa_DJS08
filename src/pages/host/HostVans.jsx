@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 export default function HostVans() {
     const [vans, setVans] = React.useState([])
@@ -11,7 +12,7 @@ export default function HostVans() {
 
     const hostVansEls = vans.map(van => (
         <Link
-            to={`/host/vans/${van.id}`}
+            to={van.id}
             key={van.id}
             className="host-van-link-wrapper"
         >
