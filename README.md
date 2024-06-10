@@ -2,6 +2,7 @@
 Install the dependencies and run the project
 ```
 npm install
-npm start
+npm install firebase
+npm run start
 ```
 
