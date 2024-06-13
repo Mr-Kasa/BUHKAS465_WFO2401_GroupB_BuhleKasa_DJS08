@@ -1,6 +1,7 @@
 # Getting Started
 Install the dependencies and run the project
 ```
+Navigate to the root directory
 npm install
 npm install firebase
 npm run start
